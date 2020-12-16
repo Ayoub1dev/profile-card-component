@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 60%;  /*62.5% = 10px = 1rem */
+    
+}
+body {
+    font-family: "Kumbh Sans", sans-serif;
+    background-color: var(--dark-cyan);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-position: right 50vw bottom 35vh, left 44vw top 57vh;
+    background-repeat: no-repeat, no-repeat;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: white;
+    width: 314px;
+    border-radius: 17px;
+    box-shadow: 10px 10px 90px 20px rgba(0, 0, 0, 0.096);
+    overflow: hidden;
+}
+.card-header {
+    width: 100%;
+    display: block;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.164);
+}
+.card-body-victor {
+    border-radius: 50%;
+    background-color: white;
+    margin-top: calc(-44px - 5px); 
+    border: solid white 5px;
+    width: 8.7rem;
+    height: 8.7rem;
+}
+.card-body-title {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1.7rem;
+    font-weight: 700;
+    color: var( --dark-desaturated-blue)
+}
+.card-body-text {
+    font-size: 1.3rem;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    color: var(--dark-gray);
+}
+.card-footer-social h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var( --dark-desaturated-blue)
+}
+.card-body-title span {
+    color: var(--dark-gray);
+    font-weight: 400;
+    padding-left: 3px;
+    
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+
+}
+.card-footer-social {
+    color: var(--dark-gray);
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    
+}
+.card-footer-social p {
+    margin-top: -1.25rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
